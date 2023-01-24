@@ -1,0 +1,127 @@
+:root{
+      /* Primary */
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+      /*Neutral */
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+}
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+}
+.text p{
+      font-size: 14px;
+      margin-top: 30px;
+      font-family: 'Montserrat', sans-serif;
+      width: 250px;
+      line-height: 1.8;
+}
+
+
+.background{
+      width: 1440px;
+      background-color: var(--Cream);
+      height: 100vh;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+}
+@media  (max-width: 768px) {
+      .background{
+            width: 375px;
+            height: 100vh;
+            display:flex ;
+            align-items: center;
+      }
+}
+.content{
+      background-color: var(--White);
+      height: 53%;
+      width: 45%;
+      border-radius: 5px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 30px;
+}
+.img img{
+     width: 100%;
+     height: 100%;
+}
+.text h2{
+margin-top: 35px;
+letter-spacing: 5px;
+font-size: 15px;
+color: var(--Dark-grayish-blue);
+margin-bottom: 20px;
+font-family: 'Fraunces', serif;
+}
+.text h1{
+      width: 210px;
+      font-family: 'Fraunces', serif;
+      font-weight: 700;
+}
+.amount{
+      margin-top: 30px;
+}
+del {
+color: var(--Dark-grayish-blue);
+text-align: center;
+height: 34px;
+font-family: 'Fraunces', serif;
+}
+ins {
+      color: var(--Dark-cyan);
+      text-decoration: none;
+      margin-right: 20px;
+      font-size: 30px;
+      font-weight: 500;
+      font-family: 'Montserrat', sans-serif;
+}
+button{
+      background-color: var(--Dark-cyan);
+      border-radius: 10px;
+      color: var(--White);
+      padding: 15px 32px;
+      text-align: center;
+      font-size: 16px;
+      width: 80%;
+      margin-top: 20px;
+      font-family: 'Montserrat', sans-serif;
+      border: none;
+}
+button a{
+      text-decoration: none;
+      color: var(--White);
+}
+button i{
+      margin-right: 5px;
+}
+@media (max-width: 768px) {
+      .content{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px 1fr;
+            height: 90%;
+            width: 350px;
+            gap: 0px;
+            margin: 0;
+            border-radius: 5px;
+      }
+      
+       .img img{
+            height: 200px;
+            
+       }
+       .text{
+            margin-left: 20px;
+       }
+
+  }
